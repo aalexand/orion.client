@@ -1,10 +1,27 @@
 {
-	"/plugins":{
-		"plugins/orionSharedWorker.js": true,
-		"git/plugins/gitPlugin.html":true,
-		"webtools/plugins/webToolsPlugin.html":true,
-		"javascript/plugins/javascriptPlugin.html":true,
-		"edit/content/imageViewerPlugin.html":true,
-		"edit/content/jsonEditorPlugin.html":true
-	}
+    "/plugins":{
+        "plugins/fileClientPlugin.html":true,
+        "plugins/authenticationPlugin.html":true,
+        "plugins/jslintPlugin.html":true,
+        "plugins/googleAnalyticsPlugin.html":true,
+        "plugins/languageToolsPlugin.html":true,
+        "plugins/preferencesPlugin.html":true,
+        "plugins/pageLinksPlugin.html":true,
+        "plugins/taskPlugin.html":true,
+        "plugins/webEditingPlugin.html":true,
+        "profile/userservicePlugin.html":true,
+        "plugins/helpPlugin.html":true,
+
+        "webtools/plugins/webToolsPlugin.html":true,
+        "javascript/plugins/javascriptPlugin.html":true,
+        "edit/content/imageViewerPlugin.html":true,
+        "edit/content/jsonEditorPlugin.html":true
+    },
+    "/settingsContainer":{
+        "categories":{
+            "showGitSettings": false,
+            "showUserSettings": false,
+            "showPluginSettings": false
+        }
+    }
 }
