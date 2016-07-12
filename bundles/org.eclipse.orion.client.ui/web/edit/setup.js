@@ -614,7 +614,13 @@ objects.mixin(EditorSetup.prototype, {
 			editorInputManager: this.editorInputManager
 		}).then(function(runBar){
 			if (runBar) {
-				this.runBar = runBar;
+				this.preferences.get('/runBar').then(function(prefs){ //$NON-NLS-1$
+					this.runBar = runBar;
+					var displayRunBar = prefs.display === undefined  || prefs.display;
+					if (!displayRunBar) {
+						lib.node("runBarWrapper").style.display = "none";
+					}
+				});
 			}
 		}.bind(this));
 	},
